@@ -1,5 +1,6 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
+<<<<<<< HEAD
   version = "3.14.2"
 
   name = "schwartz-vpc"
@@ -9,6 +10,9 @@ module "vpc" {
 
   private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
   public_subnets  = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
+=======
+  version = "3.2.0"
+>>>>>>> 93dfa20 (Bump provider versions to work on Apple Silicone M1 chips)
 
   enable_nat_gateway   = true
   single_nat_gateway   = true
