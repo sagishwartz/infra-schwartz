@@ -1,5 +1,6 @@
 FROM python:3
-ADD var/lib/jenkins/workspace/final/infra-schwartz/helloworld.py /
+WORKDIR /var/lib/jenkins/workspace/final/infra-schwartz/
+ADD . /
 RUN pip install flask
 RUN pip install flask_restful
 EXPOSE 3333
